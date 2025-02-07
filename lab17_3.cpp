@@ -10,7 +10,7 @@ vector<int> randomVector(unsigned int N){
     return v;;
 }
 
-void showVector(const vector<int>& v){
+void showVector(vector<int>& v){
 	cout << "[";
 	for(unsigned int i = 0;i < v.size() ; i++){
 		cout << v[i];
@@ -19,7 +19,7 @@ void showVector(const vector<int>& v){
 	}
 }
 
-int dotProduct(const vector<int>& A, const vector<int>& B){
+int dotProduct(vector<int>& A,  vector<int>& B){
 	int sum = 0;
 	for(unsigned int i = 0; i < A.size(); i++) sum += A[i] * B[i];	
 	 return sum;
